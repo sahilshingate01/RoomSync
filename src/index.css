@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-void:        #04060F;   /* deepest dark — page root bg */
+  --bg-deep:        #080C1A;   /* section dark bg */
+  --bg-card:        rgba(255,255,255,0.05); /* glass card */
+  --border-glass:   rgba(255,255,255,0.08);
+  --blue-primary:   #2463EB;   /* main CTA blue */
+  --blue-vivid:     #3B82F6;   /* hover/accent blue */
+  --blue-electric:  #60A5FA;   /* highlight text */
+  --violet:         #7C3AED;
+  --teal:           #06B6D4;
+  --white:          #FFFFFF;
+  --gray-400:       #94A3B8;
+  --gray-600:       #475569;
+}
+
+html.lenis {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}
+
+body {
+  background-color: var(--bg-void);
+  color: var(--white);
+  font-family: 'DM Sans', sans-serif;
+  overflow-x: hidden;
+}
+
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.font-dm {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Custom Utilities */
+.glass {
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-glass);
+}
