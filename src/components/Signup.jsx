@@ -16,8 +16,12 @@ const Signup = () => {
       setError('All fields are required');
       return;
     }
-    signup(formData);
-    navigate('/');
+    const result = signup(formData);
+    if (result.success) {
+      navigate('/');
+    } else {
+      setError(result.message);
+    }
   };
 
   return (

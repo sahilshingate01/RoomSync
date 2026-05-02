@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { User, LogOut } from 'lucide-react';
 
@@ -7,6 +7,7 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const { user, logout } = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +16,13 @@ const Navbar = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  const handleNavClick = (e, id) => {
+    if (location.pathname !== '/') {
+      e.preventDefault();
+      navigate(`/#${id}`);
+    }
+  };
 
   return (
     <nav 
@@ -43,7 +51,8 @@ const Navbar = () => {
             <a 
               key={item} 
               href={`#${item.toLowerCase()}`}
-              className="text-sm font-dm text-gray-400 hover:text-white transition-colors"
+              onClick={(e) => handleNavClick(e, item.toLowerCase())}
+              className="text-sm font-dm text-gray-400 hover:text-white transition-colors cursor-pointer"
             >
               {item}
             </a>
