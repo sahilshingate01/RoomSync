@@ -48,7 +48,7 @@ const CTA = () => {
             </h2>
 
             <p className="text-white/70 text-sm md:text-base font-dm max-w-sm mx-auto mb-10 leading-relaxed">
-              Join the 10,000+ people currently finding their next home on RoomSync. Early access members get 6 months of Premium for free.
+              Join the 10,000+ people currently finding their next home on Nestly. Early access members get 6 months of Premium for free.
             </p>
 
             {/* Email Row */}

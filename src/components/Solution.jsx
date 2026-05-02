@@ -24,7 +24,7 @@ const Solution = () => {
             <div className="bg-[#0F1629] h-12 flex items-center justify-between px-6 rounded-t-[36px]">
               <div className="flex items-center gap-2">
                 <div className="w-2.5 h-2.5 rounded-full bg-blue-primary" />
-                <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">RoomSync</span>
+                <span className="text-white/40 text-[10px] font-bold uppercase tracking-widest">Nestly</span>
               </div>
               <div className="flex gap-1.5">
                 <div className="w-1.5 h-1.5 rounded-full bg-white/10" />

@@ -7,7 +7,7 @@ const Platform = () => {
     {
       id: 'Group 1',
       icon: <User className="text-blue-400 w-5 h-5" />,
-      title: 'RoomSync Profiles',
+      title: 'Nestly Profiles',
       text: 'Showcase your lifestyle, preferences, and deal-breakers in a beautiful, interactive card.'
     },
     {
@@ -85,7 +85,7 @@ const Platform = () => {
                       <div className={`w-6 h-6 rounded-lg ${i === 0 ? 'bg-blue-100 text-blue-600' : i === 1 ? 'bg-violet-100 text-violet-600' : 'bg-teal-100 text-teal-600'} flex items-center justify-center`}>
                         <div className="w-3 h-3 rounded-sm bg-current" />
                       </div>
-                      <span className="text-gray-900 font-bold text-[10px] uppercase tracking-wider">RoomSync {item}</span>
+                      <span className="text-gray-900 font-bold text-[10px] uppercase tracking-wider">Nestly {item}</span>
                     </div>
                     <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
                       <div className={`h-full bg-current opacity-20 w-[${60 + (i * 15)}%]`} />

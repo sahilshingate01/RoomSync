@@ -33,7 +33,7 @@ const Features = () => {
             viewport={{ once: true }}
             className="inline-block bg-gray-100 text-gray-500 text-[10px] font-bold uppercase tracking-widest rounded-full px-4 py-1 border border-gray-200 mb-6"
           >
-            Welcome to RoomSync
+            Welcome to Nestly
           </motion.div>
           <motion.h2
             initial={{ opacity: 0, y: 10 }}

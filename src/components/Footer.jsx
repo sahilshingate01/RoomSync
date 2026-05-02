@@ -31,7 +31,7 @@ const Footer = () => {
                 ))}
               </div>
               <span className="font-jakarta font-bold text-lg text-white tracking-tight">
-                RoomSync
+                Nestly
               </span>
             </div>
             <p className="text-gray-500 text-sm font-dm leading-relaxed max-w-[200px]">
@@ -59,7 +59,7 @@ const Footer = () => {
         {/* Bottom Row */}
         <div className="pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-6">
           <p className="text-gray-600 text-xs font-dm">
-            © 2025 RoomSync. All rights reserved.
+            © 2025 Nestly. All rights reserved.
           </p>
 
           <div className="flex items-center gap-4">
